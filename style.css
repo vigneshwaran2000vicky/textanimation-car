@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;width: 100%;
+    padding: 20px 20px;
+    animation: header 1.8s ease-in-out;
+    color: white;
+   }
+   @keyframes header {
+   0%{
+    transform: translateY(-100%);
+   }
+}
+.header ul li{
+    display: inline-block;
+    padding-left: 30px;
+    color: white;
+}
+.header ul li:hover{
+    transform: scale(0.94);
+}
+.dd{
+    animation: dd 2s ease-in-out;
+   
+}
+@keyframes dd {
+    0%{
+     transform: translateX(100%);
+     
+    }
+ }
+ .hh{
+    animation: hh 2s ease-in-out;
+   
+}
+@keyframes hh {
+    0%{
+     transform: translateX(-100%);
+     
+    }
+ }
+
+.contant{
+   display: flex;align-items: center;
+   width:100%;
+   
+}
+.text{
+    width: 50%;margin:5% 10%;
+    z-index: 2;
+   color: white;
+   background: transparent;
+   animation: text 2s ease-in-out;
+}
+@keyframes text {
+    0%{
+     transform: translateX(-100%);
+    }
+ }
+.text h1{
+    font-size: 60px;z-index: 2;background: transparent;
+}
+.text h3{
+    font-size: 20px;
+    line-height: 30px;z-index: 2;background: transparent;
+}
+.bt2{
+border: 0;
+border:2px solid red;
+width: 95px;color: red;
+background-color: rgb(14, 13, 13);
+border-radius: 30px;
+height: 30px;margin-top: 10px;z-index: 2;
+
+}
+.bt2:hover{
+     box-shadow: 0 0 20px red ; 
+     cursor: pointer;;
+ }
+ .bt1{
+    border: 0;
+    border:2px solid yellow;
+    width: 95px;color:yellow;
+    background-color: rgb(19, 19, 17);
+    border-radius: 30px;
+    height: 30px;margin-top: 10px;z-index: 2;
+    
+    }
+    .bt1:hover{
+         box-shadow: 0 0 20px yellow ; 
+         cursor: pointer;;
+     }
+.car{
+  animation: car 4s ease-in-out;
+}
+@keyframes car {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-190%);
+    }
+}
+@media screen and(max-width:547px)
+{
+    .contant{
+        display: flex;
+        position: absolute;
+    }
+}
